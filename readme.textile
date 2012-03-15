@@ -1,0 +1,17 @@
+h1. SapperWeb
+
+This is a simple html5 sapper game.
+
+h2. Playing
+
+Click tiles to open. Numbers on backside of tiles will help you to find mines, which you can mark with flags. 
+To mark a tile you have to click on Flag on the top panel and then click to the tile you want to mark.
+To unflag a tile just click to it again.
+To finish the game click to blue triangle, if your pattern is good - game will be won.
+
+h2. Cloning
+
+I created it just to play a little with HTML5, CSS3 and Javascript. I'll be happy if this game will be helpful for you or if you'll have some fun playing it.
+You can do anything you want with it ;)
+
+

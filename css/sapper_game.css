@@ -110,11 +110,13 @@ header {
     border-radius: 5px;
 	height: 100%;
 	width: 100%;
-	background: #999 url("../images/flag.png");
+	background: #999 url("../images/flag.gif") no-repeat;
+	background-position: 15px 15px;
 }
 
 .flagged {
-	background: url("../images/flag.png") #999;
+	background: url("../images/flag.gif") #999 no-repeat;
+	background-position: 15px 15px;
 }
 
 .enabled {
@@ -158,7 +160,7 @@ header {
     border-radius: 5px;
 	height: 100%;
 	width: 100%;
-	background: #999 url("../images/restart.png") no-repeat;
+	background: #999;
 }
 
 .check-tile {
@@ -173,7 +175,20 @@ header {
 
 .check {
     border-radius: 5px;
-	height: 100%;
-	width: 100%;
-	background: #999 url("../images/start.png") no-repeat;
+	height: 50px;
+	width: 50px;
+	background: #999;
 }
+
+.check-tile-img, .renew-tile-img {
+	position: absolute;
+	background: #999;
+	height: 25px;
+	width: 25px;
+	top: 12px;
+	left: 12px;
+}
+
+.check-tile-img {background:  url("../images/start.png") no-repeat;}
+.renew-tile-img {background: #999 url("../images/restart.png") no-repeat;}
+	
