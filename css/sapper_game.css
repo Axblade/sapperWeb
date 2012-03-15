@@ -1,0 +1,179 @@
+body {
+    background: #eee;
+	text-align: center;
+}
+
+header {
+	font-weight: bold;
+	font-size: 25px;
+	margin: 5px;
+}
+
+#game {
+    border-radius: 10px;
+    border: 1px solid #666;
+    background: #222;
+    width: 565px;
+	height: 565px;
+	margin: 0 auto;
+}
+
+#field {
+    position: relative;
+    width: 480px;
+    height: 480px;
+	margin: 10px;
+}
+
+.tile {
+	-webkit-perspective: 600;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	font-size: 42px;
+	text-align: center;
+}
+
+.face {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition-property: opacity, transform, box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-backface-visibility: hidden;
+}
+
+.upside {
+    background: #999;
+    z-index: 10;
+}
+
+.downside {
+    background: #efefef;
+    -webkit-transform: rotate3d(0,1,0,-180deg);
+    z-index: 8;
+}
+
+.tile:hover .face, .tile-flipped .face {
+  	-webkit-box-shadow: 0 0 10px #aaa;
+}
+
+.tile-flipped .upside {
+  	-webkit-transform: rotate3d(0,1,0,180deg);
+  	z-index: 8;
+}
+
+.tile-flipped .downside {
+  	-webkit-transform: rotate3d(0,1,0,0deg);
+  	z-index: 10;
+}
+
+.mine {
+	background: red;
+}
+
+.empty {
+	background: #bedff8;
+}
+
+#tools {
+	border-radius: 10px;
+    border: 1px solid #666;
+    background: #222;
+    width: 565px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+#board {
+	color: white;
+	position: relative;
+    width: 545px;
+    height: 60px;
+	margin: 5px;
+}
+
+.flag-tile {
+	-webkit-perspective: 600;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.flag {
+    border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	background: #999 url("../images/flag.png");
+}
+
+.flagged {
+	background: url("../images/flag.png") #999;
+}
+
+.enabled {
+	-webkit-box-shadow: 0 0 10px yellow;
+}
+
+.disabled {
+	-webkit-box-shadow: none;
+}
+
+.counter-tile {
+	-webkit-perspective: 600;
+	border-radius: 5px;
+	width: 105px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	left: 225px;
+}
+
+.counter {
+    border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	background: #999;
+	font-size: 42px;
+	text-align: center;
+}
+
+.renew-tile {
+	-webkit-perspective: 600;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	right: 50px;
+}
+
+.renew {
+    border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	background: #999 url("../images/restart.png") no-repeat;
+}
+
+.check-tile {
+	-webkit-perspective: 600;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	right: -5px;
+}
+
+.check {
+    border-radius: 5px;
+	height: 100%;
+	width: 100%;
+	background: #999 url("../images/start.png") no-repeat;
+}
